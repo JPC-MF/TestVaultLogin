@@ -11,12 +11,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="References\**" />
-    <EmbeddedResource Remove="References\**" />
-    <None Remove="References\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Form1.cs">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Compile>
