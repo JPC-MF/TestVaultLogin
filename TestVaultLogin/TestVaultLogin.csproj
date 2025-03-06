@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -50,7 +52,6 @@
     </Reference>
     <Reference Include="Autodesk.Connectivity.IDServicesWrapper">
       <HintPath>References\Autodesk.Connectivity.IDServicesWrapper.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.Connectivity.LicenseWrapper">
       <HintPath>References\Autodesk.Connectivity.LicenseWrapper.dll</HintPath>
