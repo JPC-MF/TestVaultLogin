@@ -9,34 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Autodesk.Connectivity.Extensibility.Framework">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.Connectivity.Extensibility.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Autodesk.Connectivity.IDServicesWrapper">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.Connectivity.IDServicesWrapper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Autodesk.Connectivity.LicenseWrapper">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Autodesk Vault 2025 SDK\bin\x64\Autodesk.Connectivity.LicenseWrapper.dll</HintPath>
-    </Reference>
-    <Reference Include="Autodesk.Connectivity.WebServices">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.Connectivity.WebServices.dll</HintPath>
-    </Reference>
-    <Reference Include="Autodesk.Connectivity.WebServices.WCF">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.Connectivity.WebServices.WCF.dll</HintPath>
-    </Reference>
-    <Reference Include="Autodesk.DataManagement.Client.Framework">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.DataManagement.Client.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Autodesk.DataManagement.Client.Framework.Forms">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.DataManagement.Client.Framework.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="Autodesk.DataManagement.Client.Framework.Vault">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.DataManagement.Client.Framework.Vault.dll</HintPath>
-    </Reference>
-    <Reference Include="Autodesk.DataManagement.Client.Framework.Vault.Forms">
-      <HintPath>..\..\..\..\Program Files\Autodesk\Vault Client 2025\Explorer\Autodesk.DataManagement.Client.Framework.Vault.Forms.dll</HintPath>
-    </Reference>
+    <Compile Remove="References\**" />
+    <EmbeddedResource Remove="References\**" />
+    <None Remove="References\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -67,6 +42,37 @@
     <None Update="Ijwhost.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Autodesk.Connectivity.Extensibility.Framework">
+      <HintPath>References\Autodesk.Connectivity.Extensibility.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Connectivity.IDServicesWrapper">
+      <HintPath>References\Autodesk.Connectivity.IDServicesWrapper.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.Connectivity.LicenseWrapper">
+      <HintPath>References\Autodesk.Connectivity.LicenseWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Connectivity.WebServices">
+      <HintPath>References\Autodesk.Connectivity.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Connectivity.WebServices.WCF">
+      <HintPath>References\Autodesk.Connectivity.WebServices.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.DataManagement.Client.Framework">
+      <HintPath>References\Autodesk.DataManagement.Client.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.DataManagement.Client.Framework.Forms">
+      <HintPath>References\Autodesk.DataManagement.Client.Framework.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.DataManagement.Client.Framework.Vault">
+      <HintPath>References\Autodesk.DataManagement.Client.Framework.Vault.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.DataManagement.Client.Framework.Vault.Forms">
+      <HintPath>References\Autodesk.DataManagement.Client.Framework.Vault.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
